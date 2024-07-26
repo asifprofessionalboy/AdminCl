@@ -1,0 +1,22 @@
+﻿body {
+}
+
+/*.slide-menu > li:nth-child(1){
+    border-top :1px solid #cccaca;
+}*/
+
+.slide-menu > li {
+   /* border-bottom: 1px solid #cccaca;*/
+   padding-left:5px;
+   padding-right:5px;
+}
+
+.slide-menu > li > a{
+    font-size:smaller;
+    font-weight:500;
+}
+.slide-menu > li > ul > li > a {
+        font-size:smaller;
+        /*font-weight: 500;*/
+}
+

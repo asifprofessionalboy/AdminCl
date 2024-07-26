@@ -1,0 +1,869 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from services.juscoltd.com/clms/Default.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2024 17:34:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head id="Head1"><title>
+	Home Page
+</title><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><link rel="Stylesheet" href="Styles/bootstrap.min.css" /><link rel="Stylesheet" href="Styles/bootstrap-steps.min.css" /><link rel="stylesheet" type="text/css" href="Styles/PageStyle.css" media="screen" /><link rel="stylesheet" type="text/css" href="Styles/menu.css" media="screen" />
+   
+   <style type="text/css">
+        .blink {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 5px 10px;
+  text-align: center;
+  margin-top:5px;
+  text-decoration: none;
+  -webkit-animation: glowing 1500ms infinite;
+  -moz-animation: glowing 1500ms infinite;
+  -o-animation: glowing 1500ms infinite;
+  animation: glowing 1500ms infinite;
+}
+@-webkit-keyframes glowing {
+  0% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -webkit-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -webkit-box-shadow: 0 0 3px #B20000; }
+}
+
+@-moz-keyframes glowing {
+  0% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; -moz-box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; -moz-box-shadow: 0 0 3px #B20000; }
+}
+
+@-o-keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+@keyframes glowing {
+  0% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+  50% { background-color: #FF0000; box-shadow: 0 0 40px #FF0000; }
+  100% { background-color: #B20000; box-shadow: 0 0 3px #B20000; }
+}
+
+  .blink_y {
+  background-color: #004A7F;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 5px 18px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-animation: glowingy 1500ms infinite;
+  -moz-animation: glowingy 1500ms infinite;
+  -o-animation: glowingy 1500ms infinite;
+  animation: glowingy 1500ms infinite;
+}
+@-webkit-keyframes glowingy {
+  0% { background-color: #ffcc00; -webkit-box-shadow: 0 0 3px #ffcc00; }
+  50% { background-color: #ffdb4d; -webkit-box-shadow: 0 0 40px #ffdb4d; }
+  100% { background-color: #ffcc00; -webkit-box-shadow: 0 0 3px #ffcc00; }
+}
+
+@-moz-keyframes glowingy {
+  0% { background-color: #ffcc00; -moz-box-shadow: 0 0 3px #ffcc00; }
+  50% { background-color: #ffdb4d; -moz-box-shadow: 0 0 40px #ffdb4d; }
+  100% { background-color: #ffcc00; -moz-box-shadow: 0 0 3px #ffcc00; }
+}
+
+@-o-keyframes glowingy {
+  0% { background-color: #ffcc00; box-shadow: 0 0 3px #ffcc00; }
+  50% { background-color: #ffdb4d; box-shadow: 0 0 40px #ffdb4d; }
+  100% { background-color: #ffcc00; box-shadow: 0 0 3px #ffcc00; }
+}
+
+@keyframes glowingy {
+  0% { background-color: #ffcc00; box-shadow: 0 0 3px #ffcc00; }
+  50% { background-color: #ffdb4d; box-shadow: 0 0 40px #ffdb4d; }
+  100% { background-color: #ffcc00; box-shadow: 0 0 3px #ffcc00; }
+}
+  
+
+      /* ---------------*/
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+        :root {
+  --glow-color: hsl(186 100% 69%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#toggle{
+  visibility: hidden;
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+}
+
+#toggle:checked ~ dialog {
+  display: block;
+}
+
+label{
+  /*background: skyblue;*/
+  color: black;
+  /*padding: .5em 1em;*/
+  border-radius: 4px;
+  cursor:pointer;
+  font-weight:bold;
+ 
+}
+@keyframes appear {
+  0%{
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+dialog{
+  animation: appear 350ms ease-in 1;
+  max-width: 1500px;
+  margin-top: -610px;
+}
+table, th, td {
+  /*border: 1px solid black;*/
+  border-collapse: collapse;
+}
+
+/*--------------------*/
+.htr {
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:black;
+}
+
+.glowing-btn {
+  position: relative;
+  color: var(--glow-color);
+  cursor: pointer;
+  padding: 0.35em 1em;
+  border: 0.15em solid var(--glow-color);
+  border-radius: 0.45em;
+  background: none;
+  perspective: 2em;
+  font-family: "Raleway", sans-serif;
+  /*font-size: 2em;*/
+  font-weight: 900;
+  letter-spacing: 1em;
+
+  -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+    0px 0px 0.5em 0px var(--glow-color);
+  animation: border-flicker 2s linear infinite;
+}
+
+.glowing-txt {
+  float: left;
+  margin-right: -0.8em;
+  -webkit-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--glow-color);
+  -moz-text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3),
+    0 0 0.45em var(--glow-color);
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
+  animation: text-flicker 3s linear infinite;
+}
+
+.faulty-letter {
+  opacity: 0.5;
+  animation: faulty-flicker 2s linear infinite;
+}
+
+.glowing-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+  filter: blur(1em);
+  transform: translateY(120%) rotateX(95deg) scale(1, 0.35);
+  background: var(--glow-color);
+  pointer-events: none;
+}
+
+.glowing-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  z-index: -1;
+  background-color: var(--glow-color);
+  box-shadow: 0 0 2em 0.2em var(--glow-color);
+  transition: opacity 100ms linear;
+}
+
+.glowing-btn:hover {
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: none;
+  animation: none;
+}
+
+.glowing-btn:hover .glowing-txt {
+  animation: none;
+}
+
+.glowing-btn:hover .faulty-letter {
+  animation: none;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.glowing-btn:hover:before {
+  filter: blur(1.5em);
+  opacity: 1;
+}
+
+.glowing-btn:hover:after {
+  opacity: 1;
+}
+
+@keyframes faulty-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 0.5;
+  }
+  19% {
+    opacity: 0.5;
+  }
+  21% {
+    opacity: 0.1;
+  }
+  23% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.5;
+  }
+  83% {
+    opacity: 0.4;
+  }
+
+  87% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  8% {
+    opacity: 0.1;
+  }
+
+  9% {
+    opacity: 1;
+  }
+
+  12% {
+    opacity: 0.1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+  72% {
+    opacity: 0.2;
+  }
+
+  77% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+@keyframes border-flicker {
+  0% {
+    opacity: 0.1;
+  }
+  2% {
+    opacity: 1;
+  }
+  4% {
+    opacity: 0.1;
+  }
+
+  8% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .glowing-btn{
+    font-size: 1em;
+  }
+}
+
+
+
+
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+</style>
+<style type="text/css">
+       .myClass
+       {
+           /*border: 2px solid green;*/
+       }
+        
+       .myClass tr
+       {
+       }
+        
+       .myClass tr:hover
+       {
+           /*background-color:#79bfe2;*/
+           cursor: pointer;
+           font-weight:bold;
+       }
+       .aa:hover .aaa{
+           transition:.5s;                      
+           transform:scale(.7,.7) rotateZ(360deg);
+       }
+
+
+   /* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.vl {
+  border-left: 1px solid red;
+  height: 380px;
+}
+
+
+
+
+
+   </style>
+    <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+    
+    <form method="post" action="https://services.juscoltd.com/clms/Default.aspx" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="+Vl65qdDRV/9oV6XBgb7FvMphDuIx2FPqQHAt5WGE9BpsQLYWunXiZQFZBHezp9rHLE9c5QlR1arc+tzm9RthcU6tDS1lShfArNVr99cmfABuSiQeoGvGEQO2jzErK2oAJ6yeRaREga0z6MtoY0kTRsXjHmY9XctA1BYogkxtCHcqpMqk1FWN5zDun7be6q5" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResourcee46e.js?d=pynGkmcFUV13He1Qd6_TZHE-1MEnmbTYY-S8tQoMSh82SLYsR_5N_hkClM6OQxbKCdDExt30O0oPam-7qQykxg2&amp;t=638259560771233176" type="text/javascript"></script>
+
+
+<script src="ScriptResourcefb52.js?d=D9drwtSJ4hBA6O8UhT6CQhTxCiQp9Vp4j9w4XTIuGeO055YAOjhldv0g7zziqpq4RPBAHMaGe-ez7ZexTgjHUdImt9ENyYiP1DI9xnaS7ab93kJrdRzc_eAIPgX6o_vc2c6_TY6HJpGlcQL7uCwlK28ateVPNl23tKaUiGFI3QE1&amp;t=5d0a842b" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="ScriptResource8fc0.js?d=JnUc-DEDOM5KzzVKtsL1tRvNfL7w3GXzDZLg9hk3eOCd5a0NIC-cs5oaoSadgKgu5UlvMvIo7gvCNY91-sPpvgx00aALkCTbo0mrlK67Dys4kKF3elC7FOiLCzzFD7EYkpP9grPaETt8BapAhxtN1xkQhsClqDurywXU9wqYtLfe47q4TQlNDLN2C_YswwcB0&amp;t=5d0a842b" type="text/javascript"></script>
+<script src="Scripts/jquery-3.5.1.js" type="text/javascript"></script>
+<script src="Scripts/popper-1.16.1.js" type="text/javascript"></script>
+<script src="Scripts/bootstrap.min.js" type="text/javascript"></script>
+<script src="Scripts/solid-5.0.13.js" type="text/javascript"></script>
+<script src="Scripts/fontawesome-5.0.13.js" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="965F165E" />
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="hKVNUCWHn2nOWOjilqed1e_ckeEBOI5x9IQmqbClyNC0gl157JmpzfsPrBWiUQv4TJPB0u_kEj3TkRC-xNoQ2QYrF3hqaP4s6Ku8EENEFTE1" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="WfPloKQUXj8RzcDi+fCguxisYGJz3mkGtg1k/CETGWacWk6F3K0JtzD/t6w6tVjKvgQAEO3qrs+kmKBDXoFYOOkmpQkeOXhFFnmoNDFRSxJiNjVsRrFVN1tLzH1eHgQW" />
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'Form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+    
+
+ <div class="modal modal_outer left_modal fade" id="get_quote_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+            <div class="modal-dialog" role="document">
+
+                <div class="modal-content ">
+                    <div id="sidebar" style="height:100%;overflow-y:auto">
+                        <div class="sidebar-header text-center" style="border-bottom:1px solid white">
+                            <h4 style="display:inline;font-weight:800">CLMS</h4>
+                            
+                        </div>
+
+                        <ul class="list-unstyled components slide-menu">
+                           
+                            <li>
+                                <a href="Default.html">Home</a>
+                            </li>
+                            
+                             <li >
+                                <a href="Account/Login.html">Login</a>
+                            </li>
+
+                           
+
+                           
+
+                           
+
+                          
+                           
+                           
+                            
+                            
+                            
+                            
+                        </ul>
+                    </div>
+
+                </div><!-- //modal-content -->
+
+            </div><!-- modal-dialog -->
+        </div><!-- modal -->
+
+         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index:0;margin:0">
+                <div class="container-fluid" style="justify-content:initial">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info" data-toggle="modal" data-target="#get_quote_modal">
+                        <i class="fas fa-align-left"  ></i>
+                        
+                    </button>
+                    <a class="navbar-brand h3" href="#" style="margin:0;padding-left:10px">CLMS</a>
+                     <div class="loginDisplay" style="position:absolute;right:1%;color:white;font-size:small">               
+                      
+                       <a id="SignUp" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$SignUp&quot;, &quot;&quot;, false, &quot;&quot;, &quot;Account/Register.aspx&quot;, false, true))">Sign Up</a>
+                       <span id="Label1" style="display:inline-block;width:50px;"></span>
+                        
+                                 <a href="Account/Login.html" id="HeadLoginView_HeadLoginStatus">Log In</a> 
+                            
+
+                           
+                    </div>
+
+                   
+                </div>
+            </nav>
+
+
+        
+        <div class="main">
+        
+   <section id="hero" class="d-flex flex-column justify-content-end align-items-center">
+       <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+      <defs>
+        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
+      </defs>
+      <g class="wave1">
+        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
+      </g>
+      <g class="wave2">
+        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
+      </g>
+      <g class="wave3">
+        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
+      </g>
+           
+    </svg>
+       </section>
+       
+    <div class="row m-0"  style="width:100%">
+           <div class="" style="width:97%;">
+               <div class="form-inline row">
+                   <div class="form-group col-md-12 align-content-center mb-1 " style="font-size:medium;font-weight:bold;color:red">
+                        <span id="MainContent_lblMsg_B" class="text-center  mx-auto blink_me" style="color:Red;"></span>
+                       <span id="MainContent_lblMsg_U" class="text-center  mx-auto blink_me" style="color:Green;"></span>
+                       </div>
+               </div>
+
+               
+
+
+               <div class="form-inline row">
+                   <div class="form-group col-md-3 mb-1"></div>
+                        <div class="form-group col-md-7 mb-1">
+                            <img src="img/logo.png" class="img-fluid align-content-center"  />
+                            </div>
+                   <div class="form-group col-md-2 mb-1"></div>
+                   </div>
+               
+               <div class="row ml-3 mt-1" style="max-width:100%">
+                   <div class=" card col-md-2 example shadow p-3 bg-white rounded" style="background-color:#f3f2f2;height:380px;overflow-y:auto;">
+                       
+                   </div>
+                   
+                   <div class="col-md-8" >
+                       <div><img class="card-img-top img-responsive" src="img/image3.jpg" alt="Card image cap" height="380px" ></div>
+                   </div>
+                   <div class="card col-md-2  shadow p-3 bg-white rounded" style="background-color:#f3f2f2;height:380px">
+<div class="form-inline row">
+    <div class="form-group col-md-12 mb-1 mt-3 ml-4">
+                       <button type="button" class="blink" data-toggle="modal" data-target="#exampleModal">
+                        Supporting Hand
+                        </button>
+        
+     </div>
+    <div class="form-group col-md-2 mb-1 mt-3 ml-4">
+                       <button type="button" class="blink_y" data-toggle="modal" data-target="#BlockModal">
+  Block/Unblock
+</button>
+
+                       
+                       </div>
+    </div>
+                   </div>
+
+                   
+               </div>
+           </div>
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document"  >
+    <div class="modal-content" style="width:1400px;margin-left:-450px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Supporting Hands:</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table style="background-color:#f7f2c5;width:100%;border:thin;border-width:1px;border-style:solid">
+                <tr>
+                    <td colspan="5" style="text-align:center;color:red;font-weight:bold"><a style="text-align:center">Enquiry Timing - Monday to Friday : 5.00pm to 6.00pm</a></td>
+                </tr>
+                <tr style="font-weight:bold">
+                    <th style="width:50px;background-color:#dbd239">Slno.</th>
+                    <th style="width:250px;background-color:#dbd239">Name of Supporting Hand</th>
+                    <th style="width:170px;background-color:#dbd239">Contact No</th>
+                    <th style="width:300px;background-color:#dbd239">Mail ID</th>
+                    <th style="width:500px;background-color:#dbd239">Specific Job Responsibility</th>
+                </tr>
+                
+                <tr>
+                    <td style="width:50px">1</td>
+                    <td style="width:250px">Mr. Sanjay Kumar Jha</td>
+                    <td style="width:170px">0657- 6652064</td>
+                    <td style="width:200px">sanjay.kumar2@tatasteel.com</td>
+                    <td style="width:400px">BOCW Cess, Vendor Registraction Work Order Registration, C3 & Labour License</td>
+                </tr>
+                 <tr>
+                    <td style="width:50px">2</td>
+                    <td style="width:250px">Ms. Sarita Jha</td>
+                    <td style="width:170px">0657- 6652063</td>
+                    <td style="width:200px"></td>
+                    <td style="width:400px">Outlocation Compliance Coordinator</td>
+                </tr>
+                <tr>
+                    <td style="width:50px">3</td>
+                    <td style="width:250px">Mr. Upendra Kumar Tiwary</td>
+                    <td style="width:170px">0657- 6652063</td>
+                    <td style="width:200px"></td>
+                    <td style="width:400px">Work Order and Form V</td>
+                </tr>
+                 <tr>
+                    <td style="width:50px">4</td>
+                    <td style="width:250px">Mr. Subodh Mahato</td>
+                    <td style="width:170px">9031775314</td>
+                    <td style="width:200px"></td>
+                    <td style="width:400px">TSL Works/ Non - Works Matter</td>
+                </tr>
+                <tr>
+                    <td style="width:50px">5</td>
+                    <td style="width:250px">Mr. Joy Biswas/ IISM</td>
+                    <td style="width:170px">9835127088, 8986627088</td>
+                    <td style="width:200px">iism_888@rediffmail.com</td>
+                    <td style="width:400px">Medical/ Safety at Jamshedpur</td>
+                </tr>
+                <tr>
+                    <td style="width:50px">6</td>
+                    <td style="width:250px">Mr. Sunil Dutt Jha</td>
+                    <td style="width:170px">9263631061</td>
+                    <td style="width:200px">sunil.jha@tatasteel.com</td>
+                    <td style="width:400px">Employee Master & Vaccination Matter</td>
+                </tr>
+                <tr>
+                    <td style="width:50px">7</td>
+                    <td style="width:250px">Ms. Sutapa Khara Tunga</td>
+                    <td style="width:170px">0657- 6652164</td>
+                    <td style="width:200px">sutapa.tunga@tatasteel.com</td>
+                    <td style="width:400px">TSL Works Matter/ Helpdesk/ Grievance</td>
+                </tr>
+                <tr>
+                    <td style="width:50px">8</td>
+                    <td style="width:250px">Ms. Putul Rani Patro</td>
+                    <td style="width:170px">0657- 6652164</td>
+                    <td style="width:200px">putul.patro@tatasteel.com</td>
+                    <td style="width:400px">Contact Person for vendor partner</td>
+                </tr>
+                
+                <tr>
+                    <td style="width:50px">9</td>
+                    <td style="width:250px">Mr. Sarfaraz Ahmad</td>
+                    <td style="width:170px">0657- 6652164</td>
+                    <td style="width:200px">sarfraz.ahmad1@tatasteel.com</td>
+                    <td style="width:400px">Govt. Notices Related matter</td>
+                </tr>
+                <tr>
+                    <td style="width:50px">10</td>
+                    <td style="width:250px">Mr. Munis Haider</td>
+                    <td style="width:170px">0657- 6652164</td>
+                    <td style="width:200px">munis.haider@tatasteel.com</td>
+                    <td style="width:400px">Vendor code management & Helpdesk</td>
+                </tr>
+                 <tr>
+                    <td style="width:50px">11</td>
+                    <td style="width:250px">Mr. Deepak Kumar Paswan</td>
+                    <td style="width:170px">0657- 6652164</td>
+                    <td style="width:200px">deepak.paswan@tatasteel.com</td>
+                    <td style="width:400px">CLMS Training/IT Releated Matter</td>
+                </tr>
+                <tr>
+                    <td style="width:50px">12</td>
+                    <td style="width:250px">Ms. Amrita Kumar</td>
+                    <td style="width:170px">0657- 6652064</td>
+                    <td style="width:200px">amrita.kumar@tatasteel.com</td>
+                    <td style="width:400px">Contact Person for vendor partner/ Retention Money Clearance</td>
+                </tr>
+              <tr>
+                    <td style="width:50px">13</td>
+                    <td style="width:250px">Mr. Amit Kumar Biswas</td>
+                    <td style="width:170px">9078089152</td>
+                    <td style="width:300px">amit.biswas@tatasteel.com</td>
+                    <td style="width:400px">ASRAM SCHOOL PROJECT,KTP,MSP,Nilanchal,PHC/KTP-O&M,STP, GOBARGHATI,WTP, GOBARGHATI Location (HR/IR)</td>
+                </tr>
+                   <tr>
+                    <td style="width:50px">14</td>
+                    <td style="width:250px">Mr. Santosh Kumar Mishra</td>
+                    <td style="width:170px">7682826458</td>
+                    <td style="width:200px">santosh.mishra1@tatasteel.com</td>
+                    <td style="width:400px">INSIDE O&M TSK location (HR/IR)</td>
+                </tr>
+
+                   <tr>
+                    <td style="width:50px">15</td>
+                    <td style="width:250px">Mr.Balaya Ranjan Jena</td>
+                    <td style="width:170px">8637256825</td>
+                    <td style="width:200px">balaya.jena@tatasteel.com</td>
+                    <td style="width:400px">Bamnipal housing , Bamnipal FAP, Orange house DUBRI, Bhuwneshwar, ADM Building Jajpur Location (HR/IR)</td>
+                </tr>
+                  <tr>
+                    <td style="width:50px">16</td>
+                    <td style="width:250px">Mr.Susanta Kumar Sahoo</td>
+                    <td style="width:170px">9938855665</td>
+                    <td style="width:200px">susanta.sahoo3@tatasteel.com</td>
+                    <td style="width:400px">Angul Township and Angul Plant location (HR/IR)</td>
+                </tr>
+                 <tr>
+                    <td style="width:50px">17</td>
+                    <td style="width:250px">Mr.kaibalya Prasad Sahu</td>
+                    <td style="width:170px">8984144243</td>
+                    <td style="width:200px">kaibalya.sahu@tatasteel.com</td>
+                    <td style="width:400px">TSL Jamadoba </td>
+                </tr>
+                <tr>
+                    <td style="width:50px">18</td>
+                    <td style="width:250px">Mr.Akbar Ahmad</td>
+                    <td style="width:170px">9264438478</td>
+                    <td style="width:200px">akbar.ahmad@tatasteel.com</td>
+                    <td style="width:400px">EPC Water Projects, CHAS </td>
+                </tr>  
+                <tr>
+                    <td style="width:50px">19</td>
+                    <td style="width:250px">Mr.HARIHAR DAS</td>
+                    <td style="width:170px">8658428875</td>
+                    <td style="width:200px">harihar.das1@partners.tatasteel.com</td>
+                    <td style="width:400px">Sukinda Project</td>
+                </tr>  
+             <tr>
+                    <td style="width:50px">20</td>
+                    <td style="width:250px">Mr.Sumit Kumar</td>
+                    <td style="width:170px">9123408256</td>
+                    <td style="width:300px">sumit.kumar31@tatasteel.com</td>
+                    <td style="width:400px">TSL Works</td>
+                </tr>  
+                  <tr>
+                    <td style="width:50px">21</td>
+                    <td style="width:250px">Mr.Adarsh Kumar</td>
+                    <td style="width:170px">9031678026</td>
+                    <td style="width:300px">adarsh.kumar3@tatasteel.com</td>
+                    <td style="width:400px">Work Order Registration, C3 & Labour License, Employee master, wage and PF compliance verification in CLMS</td>
+                </tr>  
+                   <tr>
+                    <td style="width:50px">22</td>
+                    <td style="width:250px">Mr.Giren Patar</td>
+                    <td style="width:170px">8340341398</td>
+                    <td style="width:300px"></td>
+                    <td style="width:400px">Employee master Verification</td>
+                </tr>  
+                <tr>
+                    <td style="width:50px">23</td>
+                    <td style="width:250px">MS.Balpreet Kaur</td>
+                    <td style="width:170px">9078783136</td>
+                    <td style="width:300px">balpreet.kaur@tatasteel.com</td>
+                    <td style="width:400px">TSL non works, Leave F&F</td>
+                </tr>  
+                <tr>
+                    <td style="width:50px">24</td>
+                    <td style="width:250px">Mr.Ratilal Sundi</td>
+                    <td style="width:170px">0657- 6652063</td>
+                    <td style="width:300px"></td>
+                    <td style="width:400px">Leave , Bonus, F&F verification, / PHS & Admin department wage and PF verification</td>
+                </tr>  
+
+
+            </table>
+
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="BlockModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document"  >
+    <div class="modal-content" style="width:700px">
+      <div class="modal-header">
+        <h5 class="modal-title" id="BlockModalLabel">Block/Unblock :</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="GridviewDiv">
+<div>
+
+</div>
+</div>
+       </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  
+     
+
+    
+
+
+
+
+
+ 
+             
+       
+        </div>
+        <div class="clear">
+        </div>
+
+    </form>
+</body>
+
+
+<!-- Mirrored from services.juscoltd.com/clms/Default.aspx by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 26 Jul 2024 17:34:20 GMT -->
+</html>
